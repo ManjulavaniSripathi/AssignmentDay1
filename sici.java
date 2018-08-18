@@ -2,10 +2,12 @@ package assignment1;
 import java.util .*;
 class sici
 {
+	private static Scanner sc;
+
 	public static void main (String args[ ])
 	{
 		double pr, rate, t, sim,com;
-		Scanner sc=new Scanner (System. in);
+		sc = new Scanner (System. in);
 		System.out.println("Enter the amountL:");
 		pr=sc.nextDouble();
 		System. out. println("Enter the No.of years:");
