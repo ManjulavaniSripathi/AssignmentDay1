@@ -1,6 +1,6 @@
 package assignment1;
 import java.util.Scanner;
-public class avg_marks {
+public class Average_marks {
 	private static Scanner sc;
 
 	public static void main(String args[]) {

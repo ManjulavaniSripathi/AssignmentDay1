@@ -1,7 +1,7 @@
 package assignment1;
 import java.io.* ;
 
-public class reverse {
+public class Reverse {
 	
 	public static void main(String[] args) throws IOException {
 		
@@ -9,7 +9,6 @@ public class reverse {
 				String inp=br.readLine();
 		        String words[]=inp.split(" ") ;
 		        
-		        //String reverse[]=new String[words.length] ;
 		       String fin="";
 		       for(int i=0;i<words.length;i++)
 		       {
@@ -18,7 +17,7 @@ public class reverse {
                     {
 	                    rev+=words[i].charAt(j) ;
                     }
-                    //reverse[i]=rev ;
+                   
                     fin+=rev+" ";
 		        }
 		        System.out.print(fin) ;

@@ -4,11 +4,8 @@ package assignment1;
 import java.io.*;
 import java.text.DateFormatSymbols;
 
-
 public class Date {
-	private static int a;
-
-	public static void main (String[] args) throws IOException{
+		public static void main (String[] args) throws IOException{
 		
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		String abc=br.readLine();
@@ -18,7 +15,6 @@ public class Date {
 		String monthString;
 		monthString = new DateFormatSymbols().getMonths()[x-1];
 		System.out.println(date[0] +"/" +monthString +"/" +date[2]);;
-		a = date.length;
 }
 }
 

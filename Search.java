@@ -7,8 +7,7 @@ public class Search {
            int key = 19;
 
            int i = 0;
-           boolean found = false;    // set the boolean value to false until the key is found
-
+           boolean found = false;    
           for ( i = 0; i < numbers.length; i++)
           {
                  if (numbers[ i ]  == key)
@@ -18,8 +17,7 @@ public class Search {
                  }
            }
 
-          if (found)   //When found is true, the index of the location of key will be printed.
-          {
+          if (found)             {
                 System.out.println("Found " + key + " at index " + i + ".");
           }
           else

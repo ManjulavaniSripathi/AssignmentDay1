@@ -1,6 +1,6 @@
 package assignment1;
 import java.util .*;
-class sici
+class SiCi
 {
 	private static Scanner sc;
 
