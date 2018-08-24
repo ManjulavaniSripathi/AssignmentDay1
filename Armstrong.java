@@ -1,26 +1,20 @@
-package assignment1;
-import java.util.Scanner;
+package com.day2;
+
 public class Armstrong {
-	public static void main(String[] args) {
-		
-		int num, number, temp, total = 0;
-		System.out.println("Enter 3 Digit Number");
-		Scanner scanner = new Scanner(System.in);
-		num = scanner.nextInt();
-		scanner.close();
-		number = num;
-		
-		for ( ;number!=0;number /=10)
-		{
-			temp = number % 10;
-			total = total + temp*temp*temp;
-			
+
+	public static boolean checkArmstrong(int i) {
+		int num = i;
+		int rem = 0;
+		int sum=0;
+		while(num!=0) {
+			rem=num%10;
+		sum=sum+(rem*rem*rem);
+		num=num/10;
 		}
-		
-		if(total == num)
-			System.out.println(num + " is an Armstrong number");
+		if(i==sum)
+			return true;
 		else
-			System.out.println(num + " is not an Armstrong number");
-		
-		}
+			return false;
 	}
+}
+
