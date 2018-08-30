@@ -2,7 +2,7 @@ package com.capgemini.day6;
 
 import java.util.Objects;
 
-public class Car {
+public class Car implements Comparable <Car> {
 	private String make;
 	private String model;
 	private int year;
@@ -68,6 +68,14 @@ public boolean equals(Object obj) {
 	Car c2 = (Car)obj;
 	return this.make == c2.make && this.model == c2.model && this.year == c2.year;
 }
-}
+@Override
+public int compareTo(Car c) {
+	int result = this.make.compareTo(c.make);
+	if(result == 0)
+		return this.model.compareTo(c.model);
+	return result;
 
+
+}
+}
 
